@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- шрифт monsterrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- шрифт Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body> 
+    <header class = "header" onclick="baseHeaderOff()" > 
+        <a class = "header__NameLogo-And-Search"   href = "#">
+            <div onclick="ReturnToHomePage()" class="NameLogo">
+                <img src="SVG/Name-Logo.svg" >
+            </div>
+            <div class="Search-Group">
+                <div class="SearchLine Search-Group__SearchLine" onclick="changeActiveSearch(this)">
+                    <div class="Anactive-Lupa Search-Group__Anactive-Lupa">
+                        
+                        <img class = "Lupa__Img" src="SVG/search_types/Property 1=Default.svg" >
+                    </div>
+                    <input class = "Search-Group__Input" placeholder="Поиск товара"  type="text"/>
+                    <div class="Lupa Search-Group__Lupa Search-Group__Lupa_Enabled  ">
+                        <img class = "Lupa__Img" src="SVG/search_types/Property 1=Default.svg" >
+                    </div>
+                    <div onclick = "ret()"class="Anactive-close Search-Group__Anactive-close ">
+                        <img class = "close__Img" src="SVG/close_types/Property 1=Default (1).svg" alt="">
+                    </div>
+                    
+                   
+                        
+                </div>
+                
+                <div class="Like Search-Group__like">
+                    <img class = "Like__Img"src="/SVG/like_types/like.svg" >
+                </div>
+            </div>
+            
+        </a>
+        <div class="Line">
+        </div>
+        <div class="Header__Menu">
+            <a class="Header-Menu__Products"  onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <div class="Products__Group ">
+                    <div class="3lines">
+                        <img class = "3lines__img" src="SVG/3_lines.svg" alt="">
+                    </div>
+                    <p class = "menu-text">Каталог товаров</p>
+                </div>
+                
+            </a>
+            <a class="Header-Menu__Brends" href = "/" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Наши бренды</p>
+            </a>
+            <a class="Header-Menu__Sales" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Акции</p>
+            </a>
+            <a class="Header-Menu__ABC" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Азбука здоровья</p>
+            </a>
+            <a class="Header-Menu__News" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Статьи</p>
+            </a>
+            <a class="Header-Menu__Company" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">О компании</p>
+            </a>
+            <a class="Header-Menu__Buy" href = "/"onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <div class="Buy__Group ">
+                    <div class="map">
+                        <img class = "map__img" src="SVG/map_place.svg" alt="">
+                    </div>
+                    <p class = "menu-text">Где купить</p>                
+                </div>
+            </a>
+            <a class="Header-Menu__Contacts" href = "/" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Контакты</p>
+            </a>
+           
+        </div>
+        <div class="header__Group Header__Group_Disabled" onclick = "baseHeaderOn()">
+            <a class="Logo-Small">
+                <img class = "Logo-small__img" src="SVG/header_closed/Group 8754.svg" alt="">
+            </a>
+            <a class="Header-Group__Products"  onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <div class="Products__Group ">
+                    <div class="3lines">
+                        <img class = "3lines__img" src="SVG/3_lines.svg" alt="">
+                    </div>
+                    <p class = "menu-text">Каталог товаров</p>
+                </div>
+            </a>
+            <a  class="header-group__Brends" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Наши бренды</p>
+            </a>
+            <a class = "header-group__Sales" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Акции</p>
+            </a>
+            <a  class = "header-group__ABC" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Азбука здоровья</p>
+            </a>
+            <a  class = "header-group__News" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">Статьи</p>
+            </a>
+            <a class = "header-group__Company" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class = "menu-text">О компании</p>
+            </a>
+            <a  class = "header-group__Buy" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <div class="Buy__Group ">
+                    <div class="map">
+                        <img class = "map__img" src="SVG/map_place.svg" alt="">
+                    </div>
+                    <p class = "menu-text">Где купить</p>                
+                </div>
+            </a>
+            <a  class = "header-group__contacts" onmouseover="menuover(this)" onmouseleave="menuleave(this)">
+                <p class ="menu-text">Контакты</p>
+            </a>
+            <a onclick = "headerGroupDisable()" class="Lupa header-group__Lupa header-group__Lupa_Enabled  ">
+                <img class = "Lupa__Img" src="SVG/search_types/Property 1=Default.svg" >
+            </a>
+            <a class="Like header-group__like">
+                <img class = "Like__Img"src="/SVG/like_types/Property 1=Variant2 (2).svg" >
+            </a>
+            <div class="Search-Group Search-Group_anactive">
+                <div class="SearchLine Search-Group__SearchLine" onclick="">
+                    <div class="Anactive-Lupa search-Group__Anactive-Lupa">
+                        
+                        <img class = "Lupa__Img" src="SVG/search_types/Property 1=Default.svg" >
+                    </div>
+                    <input  class = "Search-Group__Input" placeholder="Поиск товара" onclick = "text()" type="text"/>
+                    <div class="Lupa Search-Group__Lupa Search-Group__Lupa_Enabled  ">
+                        <img class = "Lupa__Img" src="SVG/search_types/Property 1=Default.svg" >
+                    </div>     
+                </div>
+                <div onclick = "headerGroupEnable()"class="close Search-Group__close ">
+                        <img class = "close__Img" src="SVG/close_types/Property 1=Default (1).svg" alt="">
+                </div>
+                
+            </div>
+
+
+        </div>
+        <div class="header__Name-Logo header__Name-Logo_Disabled">
+            <img src="SVG/NameLogo1280.svg" alt="">
+        </div>
+    </header>
+    <div class="Main-block">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__background">
+                    <img class = "lekarstva swiper-slide__lekarstva" src="images/slider_imageLekarstva1.png" alt="">
+                    <img class = "backGround-Img swiper-slide__backGround-Img" src="images/slider_image1.png" alt="">
+                </div>
+                <div class="swiper-slide__info">
+                    <p class = "zagolovok">-50%
+                        <br>на комплексы 
+                        <br> Антистресс!</p>
+                    <p class = "Slider-text info__Slider-text">Уменьшают психоэмоциональное напряжение, агрессивность,
+                         конфликтность; повышает социальную адаптацию,
+                          улучшает настроение, облегчает засыпание и 
+                          нормализует сон.</p>
+                    <div class="swiper-slide__Group">
+                        <button class = "swiper-slide__button"><span class = "button-text button-text_white-bolder">В каталог</span></button>
+                        <a class =" button-text button-text_blue-bolder"href="#">Подробнее об акции</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__background">
+                    <img class = "lekarstva swiper-slide__lekarstva" src="images/slider_imageLekarstva1.png" alt="">
+                    <img class = "backGround-Img swiper-slide__backGround-Img" src="images/slider_image1.png" alt="">
+                </div>
+                <div class="swiper-slide__info">
+                    <p class = "zagolovok">Кардиола</p>
+                    <p class = "Slider-text info__Slider-text">БАД для здоровья сердца и активной жизни, в составе которой преобладают натуральные экстракты лекарственных растений и важные элементы, необходимые для заботы о серце и сосудах.</p>
+                    <div class="swiper-slide__Group">
+                        <button class = "swiper-slide__button"><span class = "button-text button-text_white-bolder">В каталог</span></button>
+                        <a class =" button-text button-text_blue-bolder"href="#">Подробнее об акции</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__background">
+                    <img class = "lekarstva swiper-slide__lekarstva" src="images/slider_imageLekarstva1.png" alt="">
+                    <img class = "backGround-Img swiper-slide__backGround-Img" src="images/slider_image1.png" alt="">
+                </div>
+                <div class="swiper-slide__info">
+                    <p class = "zagolovok">Российский
+                        <br>производитель
+                        <br> БАДов</p>
+                    <p class = "Slider-text info__Slider-text">Импловит — динамично-развивающаяся компания, занимающаяся производством биологически активных добавок (БАД) под одноименным брендом.</p>
+                    <div class="swiper-slide__Group">
+                        <button class = "swiper-slide__button"><span class = "button-text button-text_white-bolder">В каталог</span></button>
+                        <a class =" button-text button-text_blue-bolder"href="#">Подробнее об акции</a>
+                    </div>
+                </div>
+              </div>
+             
+            </div>
+            
+        </div>
+        <div class="Anim-Blocks">
+            <div class="Anim-Block">
+                <div class="production__image-group">
+                    <div class="production__background"><img src="SVG/animBall1/масштаб.svg" alt=""></div>
+                    <div class="production__anim-background"><img src="SVG/animBall1/масштаб и сдвиг без поворот.svg" alt=""></div>
+                    <div class = "production__ball1"><img src="SVG/animBall1/сдвиг.svg" alt=""></div>
+                    <div class = "production__ball2"><img src="SVG/animBall1/сдвиг (1).svg" alt=""></div>
+                    <div class = "production__ball3"><img src="SVG/animBall1/сдвиг (2).svg" alt=""></div>
+
+                </div>
+                <p class ="Anim-Block-text Anim-Block-text_white">Современное <br> производство</p>
+            </div>
+            <div class="Anim-Block">
+                <div class="assort__image-group">
+                    <div class="assort__background"><img src="SVG/animBall2/Group 8842 (2).svg" alt=""></div>
+                    <div class="assort__Anim-Background"><img src="SVG/animBall2/Vector 17.png" alt=""></div>
+                    <div class="assort__ball1"><img src="SVG/animBall2/Ellipse 40 (1).svg" alt=""></div>
+                    <div class="assort__ball2"><img src="SVG/animBall2/Ellipse 37 (1).svg" alt=""></div>
+
+                </div>
+                <p class ="Anim-Block-text Anim-Block-text_white">Широкий <br> ассортимент</p>
+            </div>
+            <div class="Anim-Block">
+                <div class="impost-basa__group">
+                    <div class="import-basa__Background"> <img src="SVG/animBall3/Mask group (2).svg" alt=""></div>
+                    <div class="import-basa__Anim-Background"><img src="SVG/animBall3/Vector 18.svg" alt=""></div>
+                    <div class="import-basa__ball1"><img src="SVG/animBall3/Ellipse 38.svg" alt=""></div>
+                    <div class="import-basa__ball2"><img src="SVG/animBall3/Ellipse 41.svg" alt=""></div>
+                    <div class="import-basa__ball3"><img src="SVG/animBall3/Ellipse 43.svg" alt=""></div>
+
+                </div>
+                <p class = "Anim-Block-text Anim-Block-text_white">Импортная <br> сырьевая база</p>
+            </div>
+            <div class="Anim-Block">
+                <div class="quality__group">
+                    <div class="quality__background"><img src="SVG/animBall4/Mask group.svg" alt=""></div>
+                    <div class="quality__animbackground"><img src="SVG/animBall4/Vector 20.svg" alt=""></div>
+                    <div class="quality__ball1"><img src="SVG/animBall4/Ellipse 39.svg" alt=""></div>
+                    <div class="quality__ball2"><img src="SVG/animBall4/Ellipse 44.svg" alt=""></div>
+
+                </div>
+                <p class = "Anim-Block-text Anim-Block-text_white">Контроль <br>качества</p>
+            </div>
+            <div class="Anim-Block">
+                <div class="sales__group">
+                    <div class="sales__background"><img src="SVG/animBall5/Mask group (3).svg" alt=""></div>
+                    <div class="sales__animbackground"><img src="SVG/animBall5/Vector 20 (1).svg" alt=""></div>
+                    <div class="sales__ball1"><img src="SVG/animBall5/Ellipse 38 (2).svg" alt=""></div>
+                    <div class="sales__ball2"><img src="SVG/animBall5/Ellipse 43 (1).svg" alt=""></div>
+
+                </div>
+                <p class = "Anim-Block-text Anim-Block-text_white">Доступные <br>цены</p>
+            </div>
+
+        </div>
+        <div class="brends">
+            <div class="brends__zagolovok">
+                <p class = "podpis">У нас несколько линеек продуктов</p>
+                <p class = "paragrapf">Наши бренды</p>
+            </div>
+            <div class="brends__blocks">
+                <div class="brends__block brends__block_grid1 "> 
+                        <div class="bredns__background">
+                            <div class="implovit1 brends__implovit1">
+                                <img class = "brends-implovit1__img"src="SVG/brends/brends__img/imploivit/01.svg" alt="">
+                            </div>
+                            <div class="implovit2 brends__implovit2">
+                                <img class = "brends-implovit2__img"src="SVG/brends/brends__img/imploivit/02.svg" alt="">
+                            </div>
+                            <div class="brends__background1">
+                                <img class = "brends-background1__img" src="SVG/brends/brends__img/imploivit/Vector 30.svg" alt="">
+                            </div>
+                            <div class="brends__background2">
+                                <img class = "brends-background2__img"src="SVG/brends/brends__img/imploivit/Vector 31.svg" alt="">
+                            </div>
+                            <img src="" alt="">
+                        </div>
+                        <div class="brends__text-implovit">
+                            <div class="brends-text__implovit-img"><img src="/SVG/brends/brends__name/импловит.svg" alt=""></div>
+                            <p class = "text_cards text_cards_active">БАД к пище, специальные (лечебно-косметические) средства.</p>
+                            <p class = "text_cards text_cards_anactive">Лечебные средства</p>
+
+                            <div class="brend-text__a">
+                                <a class = "brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="brends__block brends__block_grid2"> 
+                    <div class="bredns__bakcground">
+                        <div class="immonuceya1 brends__immonuceya1">
+                            <img class = "brends-immonuceya1__img"src="SVG/brends/brends__img/immunoceya/03.svg" alt="">
+                        </div>
+                        <div class="immonuceya2 brends__immonuceya2">
+                            <img class = "brends-immonuceya2__img"src="SVG/brends/brends__img/immunoceya/04.svg" alt="">
+                        </div>
+                        <div class = "brends__background1">
+                            <img class = "brends-background1__img"src="svg/brends/brends__img/immunoceya/Vector 30 (1).svg" alt="">
+                        </div>
+                        <div class = "brends__background2">
+                            <img class = "brends-background2__img"src="SVG/brends/brends__img/immunoceya/Vector 29.svg" alt="">
+                        </div>
+
+                    </div> 
+                    <div class="brends-text__immonaceya">
+                        <div class="brends-text__immynicia-img"><img class = "immynicia"src="SVG/brends/brends__name/имуноцея.svg" alt=""></div>
+                        <p class = "text_cards text_cards_active">БАД из экстрактов лекарственных растений: эхинацея, девясил, чеснок, куркума, шиповник и тд.</p>
+                        <p class = "text_cards text_cards_anactive">Лечебные средства</p>
+
+                        <div class="brend-text__a ">
+                            <a class = "brends-a-text brends-a-text_malina" href="#">Подробнее &nbsp;></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="brends__block brends__block_grid3"> 
+                    <div class="bredns__bakcground">
+                        <div class="grovely1"><img class = "brends-grovely1__img"src="SVG/brends/brends__img/grovely/06.svg" alt=""></div>
+                        <div class="grovely2"><img class = "brends-grovely2__img"src="SVG/brends/brends__img/grovely/05.svg" alt=""></div>
+                        <div class = "brends__background1"><img class = "brends-background1__img" src="SVG/brends/brends__img/grovely/Vector 32.svg" alt=""></div>
+                        <div class = "brends__background2"><img class = "brends-background2__img" src="SVG/brends/brends__img/grovely/Vector 31 (1).svg" alt=""></div>
+
+
+                    </div>
+                    <div class="brends-text__grovely-botanic">
+                        <div class="brends-text__botamic-img"><img src="SVG/brends/brends__name/grovely_botanic.svg" alt=""></div>
+                        <p class = "text_cards text_cards_active">Линия косметических средств по уходу за телом и волосами из экстрактов цветов, фруктов, масел и тд.</p>
+                        <p class = "text_cards text_cards_anactive">Косметические средства</p>
+
+                        <div class="brend-text__a">
+                            <a class = "brends-a-text brends-a-text_sishki" href="#">Подробнее &nbsp;></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="brends__block brends__block_grid4"> 
+                    <div class="bredns__bakcground">
+                        <div class="kardiolla1 brends__lardiolla1"><img class = "brends-kardiolla1__img"src="SVG/brends/brends__img/kardiolla/Cardiola_100x70x27_1000.svg" alt=""></div>
+                        <div class="kardiolla2 brends__lardiolla2"><img class = "brends-kardiolla2__img"src="SVG/brends/brends__img/kardiolla/Cardiola_syrop.svg" alt=""></div>
+                        <div class = "brends__background1"><img class = "brends-background1__img"src="SVG/brends/brends__img/kardiolla/Vector 32 (1).svg" alt=""></div>
+                        <div class = "brends__background2"><img class = "brends-background2__img"src="SVG/brends/brends__img/kardiolla/Vector 33.svg" alt=""></div>
+
+                    
+                    </div>
+                    <div class="brends-text__kardiolla">
+                        <div class="brends-text__kardiola-img"><img src="SVG/brends/brends__name/кардиола.svg" alt=""></div>
+                        <p class = "text_cards text_cards_active">БАД для здоровья сердца и активной жизни из натуральных экстрактов лекарственных растений.</p>
+                        <p class = "text_cards text_cards_anactive">Для здоровья сердца</p>
+
+                        <div class="brend-text__a">
+                            <a class = "brends-a-text brends-a-text_malina" href="">Подробнее &nbsp;></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brends__block brends__block_grid5"> 
+                    <div class="bredns__bakcground">
+                        <div class="growvit1 brends__growvit1"> <img class = "brends-growvit1__img"src="SVG/brends/brends__img/growvit/09 1.svg" alt=""></div>
+                        <div class="growvit2 brends__growvit2"> <img class = "brends-growvit2__img" src="SVG/brends/brends__img/growvit/Group 8971.svg" alt=""></div>
+                        <div class="growvit3 brends__growvit3"><img class = "brends-growvit3__img"src="SVG/brends/brends__img/growvit/Ellipse 51.svg" alt=""></div>
+                        <div class="growvit4 brends__growvit4"><img sclass = "brends-growvit4__img"rc="SVG/brends/brends__img/growvit/Ellipse 52.svg" alt=""></div>
+                        <div class="growvit5 brends__growvit5"><img class = "brends-growvit5__img"src="SVG/brends/brends__img/growvit/Ellipse 53.svg" alt=""></div>
+                        <div class="brends__background1"><img class = "brends-background2__img"src="SVG/brends/brends__img/growvit/Group 8917.svg" alt=""></div>
+                    </div>
+                    <div class="brends-text__growvit">
+                        <div class="brends-text__growit-img"><img src="SVG/brends/brends__name/growit.svg" alt=""></div>
+                        <p class = "text_cards text_cards_active">Детское питание, средства по уходу за детьми, витаминно-минеральные комплексы для детей с 3-х лет и тд.</p>
+                        <p class = "text_cards text_cards_anactive">Товары для детей</p>
+
+                        <div class="brend-text__a">
+                            <a class = "brends-a-text brends-a-text_green" href="">Подробнее &nbsp;></a>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            <button onmouseover = "bluetext(this)" onmouseleave = "whitetext(this)" class = "brends__button"><span  class = "button-text button-text_white-bolder">Перейти ко всем брендам</span></button>         
+            
+        </div>
+        <div class="about-Company about-Company_blue-background">
+
+            <div class="about-Company__zagolovok">
+                <p class = "podpis podpis_white">О компании</p>
+                <p class = "paragrapf paragrapf_white">У здоровья есть имя — Импловит! </p>
+            </div>
+            <div class="about-Company__opis">
+                <p class = "main-text main-text_white">Импловит® дает возможность каждому человеку сохранить и укрепить свое здоровье, 
+                    используя натуральные, эффективные, качественные препараты. Продуктовая линейка
+                     бренда насчитывает порядка 50 наименований биологически активных добавок для 
+                     мужчин и женщин любого возраста, а также детей. </p>
+                <button onmouseover = "bluetext(this)" onmouseleave = "whitetext(this)" class = "about-Company__button"><span class = "button-text button-text_white-bolder">Узнать о компании</span></button>
+            </div>
+            
+        </div>
+        <div class="products">
+            <div class="popular-products">
+                <p class = "podpis">Топ продаж</p>
+                <div class="turn-block">
+                    <p class = "paragrapf paragrapf_choice paragrapf_active">Популярные товары</p>
+                    <div onclick = "tumblerRightLeft(this)" class="turn-left-right products__turn-left-right">
+                        <p class = "Anim-Block-text Anim-Block-text_anactive">Популярное</p>
+                        <div class="turn-left-right__tumbler "></div>
+                        <p class = "Anim-Block-text Anim-Block-text_gray_anactive">Выбор покупателя</p>
+                    </div>
+                    <p onmouseover = "activeTumblerHover(this)" class = "paragrapf paragrapf_no-choice">Выбор покупателя</p>
+                </div>
+            </div>
+            <div class="products__slider">
+                <div class="arrow"><img src="SVG/brends/brends__img/sliderImages/arrow2 (2).svg" alt=""></div>
+               <div class="products-slider__slide">
+                <div class="sales sales_pink"><p class = "sales-text sales-text__white">новинка</p></div>
+
+                    <div class="slide__content">
+                        <div class="products-slide__img">
+                        <img src="SVG/brends/brends__img/sliderImages/vitaminD33.png" alt="">
+                        </div>
+                        <div class="tochki slide__tochki">
+                            <img src="SVG/brends/brends__img/five-tochek.svg" alt="">
+                        </div>
+                        <div class="products-slide__text">
+                            <p class = "podpis">Импловит</p>
+                            <p class = "slide-zagolovok slide__slide-zagolovok">Витамин D3 2000 МЕ</p>
+                            <p class = "text_cards">Дополнительный источник витамина D3.</p>
+                        </div>
+                    </div>
+                    <button onmouseleave = "bluetext(this)" onmouseover = "whitetext(this)" class = "products-slider__button"><span class = "button-text button-text_blue-bolder">Подробнее</span></button>
+               </div>
+               <div class="products-slider__slide">
+                <div class="sales sales_green"><p class = "sales-text sales-text__white">акция</p></div>
+
+                    <div class="slide__content">
+                        <div class="products-slide__img">
+                        <img src="SVG/brends/brends__img/sliderImages/энертпритон.png" alt="">
+                        </div>
+                        <div class="tochki slide__tochki">
+                            <img src="SVG/brends/brends__img/five-tochek.svg" alt="">
+                        </div>
+                        <div class="products-slide__text">
+                            <p class = "podpis">Бьютека «Beauteka»</p>
+                            <p class = "slide-zagolovok slide__slide-zagolovok">Магний В6 + фолиевая кислота</p>
+                            <p class = "text_cards">Для нормального функционирования клеток, участвует в большинстве...</p>
+                        </div>
+                    </div>
+                    <button onmouseleave = "bluetext(this)" onmouseover = "whitetext(this)" class = "products-slider__button"><span class = "button-text button-text_blue-bolder">Подробнее</span></button>
+               </div>
+               <div class="products-slider__slide">
+                <div class="sales sales_green"><p class = "sales-text sales-text__white">акция</p></div>
+
+                <div class="slide__content">
+                    <div class="products-slide__img">
+                    <img src="SVG/brends/brends__img/sliderImages/валериана.svg" alt="">
+                    </div>
+                    <div class="tochki slide__tochki">
+                        <img src="SVG/brends/brends__img/five-tochek.svg" alt="">
+                    </div>
+                    <div class="products-slide__text">
+                        <p class = "podpis">Кардиола</p>
+                        <p class = "slide-zagolovok slide__slide-zagolovok">Валериана комплекс</p>
+                        <p class = "text_cards">Валериана лекарственная обладает успокаивающим эффектом, регулирует...</p>
+                    </div>
+                </div>
+                <button onmouseleave = "bluetext(this)" onmouseover = "whitetext(this)" class = "products-slider__button"><span class = "button-text button-text_blue-bolder">Подробнее</span></button>
+               </div>
+               <div class="products-slider__slide">
+                <div class="slide__content">
+                    <div class="products-slide__img">
+                    <img src="SVG/brends/brends__img/sliderImages/vitaminD33.png" alt="">
+                    </div>
+                    <div class="tochki slide__tochki">
+                        <img src="SVG/brends/brends__img/five-tochek.svg" alt="">
+                    </div>
+                    <div class="products-slide__text">
+                        <p class = "podpis">Импловит</p>
+                        <p class = "slide-zagolovok slide__slide-zagolovok">Витамин D3 2000 МЕ</p>
+                        <p class = "text_cards">Дополнительный источник витамина D3.</p>
+                    </div>
+                </div>
+                <button onmouseleave = "bluetext(this)" onmouseover = "whitetext(this)" class = "products-slider__button"><span class = "button-text button-text_blue-bolder">Подробнее</span></button>
+           
+            
+               </div>
+               <div class="arrow"><img src="SVG/brends/brends__img/sliderImages/arrow.svg" alt=""></div>
+            </div>   
+            
+        </div>
+        <div class="control">
+            <div class="control__zagolovok">
+                <p class = "podpis">наше производство</p>
+                <p class = "paragrapf">7 ступеней контроля качества</p>
+            </div>
+            <div class="kachestva">
+                <div class="kachestvo">
+                    <div class="kachestvo__img"> </div>
+                    <div class="kachectvo__opisanie">
+                        <p class = "main-text">Мы заботимся о безопасности 
+                            своей продукции и здоровье потребителей, 
+                            постоянно улучшая и обеспечивая контроль 
+                            качества в течение всего жизненного цикла
+                             препаратов: от стадии разработки до этапа
+                              проверки выпускаемой продукции
+                        </p>
+                        <button onmouseover = "bluetext(this)" onmouseleave = "whitetext(this)"class = "universal-button kachestvo__univesral-buttin universal-button_blue">
+                            <span class = "button-text button-text_white-bolder">
+                                Смотреть видео о производстве
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="kachestvo-reverse">
+                    <div class="kachectvo-reverse__opisanie">
+                        <p class = "H3">Доступно для вас, и под нашим контролем качества!</p>
+                        <p class = "main-text">Мы заботимся о безопасности своей 
+                            продукции и здоровье потребителей, 
+                            постоянно улучшая и обеспечивая контроль 
+                            качества в течение всего жизненного цикла 
+                            препаратов: от стадии разработки до этапа 
+                            проверки выпускаемой продукции
+                        </p>
+                        <button onmouseover = "bluetext(this)" onmouseleave = "whitetext(this)" class = "universal-button kachestvo-reverse__univesral-buttin universal-button_blue">
+                            <span class = "button-text button-text_white-bolder">
+                                О нашем подходе к качеству
+                            </span>
+                        </button>
+                    </div>
+                    <div class="kachestvo-reverse__img"> </div>
+
+                </div>
+              
+            </div>
+        </div>
+        <div class="about-Company about-Company_margin_pink-background">
+
+            <div class="about-Company__zagolovok about-Company__zagolovok_padding">
+                <p class = "podpis podpis_white">Наши компоненты</p>
+                <p class = "paragrapf paragrapf_white">Азбука здоровья
+                </p>
+            </div>
+            <div class="about-Company__opis about-Company__opis_paddind">
+                <p class = "main-text main-text_white">В основе всех средств производства Импловит® лежат полезные для здоровья формы.
+                    Их состав — необходимые для полноценной жизни вещества
+                   в формах для лучшего усвоения
+                   способные качественно восполнить дефицит важных элементов в организме. 
+                   Самое важное при этом - доступное не только по качеству, но и цене! </p>
+                <button onmouseover = "pinktext(this)" onmouseleave = "whitetext(this)" class = "universal-button universal-button_pink"><span class = "button-text button-text_white-bolder">Подробнее</span></button>
+            </div>
+            
+        </div>
+        <div class="stati">
+            <div class = "stati__zagolovok">
+                <p class = "podpis">Журнал</p>
+                <p class = "paragrapf">Наша забота о Вашем здоровье</p>
+            </div>
+            <div class="stati__cards">
+                <div class="stati__main-card">
+                    <div class="main-card__img">
+                        <img src="images/zabota/Анимация статьи большой (1).png" alt="">
+                    </div>
+                    <div class="main-card__text"> 
+                        <p class = "H3 H3_active">
+                            Урчит, болит, волнует: вся правда <br>
+                            о синдроме раздраженного кишечника
+                        </p>
+                       
+                        <p class = "text_cards text_cards_active">Согласно статистике, примерно каждый третий 
+                        человек на земле сталкивается с синдромом раздраженного кишечника
+                         (СРК). Он проявляется выраженным дискомфортом в животе:
+                          вздутие, урчание, тяжесть, расстройство стула. Симптомы 
+                          СРК мешают ...</p>
+                        <a class = "brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        
+                    </div>
+                   
+                          
+
+                </div>
+                <div class="stati__second-card">
+                    <div class="second-card__block">
+                        <div class="second-card__img"> 
+                            <img src="images/zabota/Анимация стать мини4.png" alt="">
+                        </div>
+                        <div class="second-card__text"> 
+                            <p class = "h4 second-card__h4 ">В тренде! Отвечаем на главные вопросы о БАДах</p>
+                            <a class = "brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="second-card__block second-card__block_active">
+                        <div class="second-card__img">
+                            <img src="images/zabota/Анимация стать мини3.png" alt="">
+                        </div>
+                        <div class="second-card__text"> 
+                            <p class = "h4 second-card__h4 ">Ангина. Лечим, не калечим</p>
+                            <a class = "brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        </div>
+
+                    </div>
+                    <div class="second-card__block">
+                        <div class="second-card__img"> 
+                            <img src="images/zabota/Анимация стать мини1.png" alt="">
+                        </div>
+                        <div class="second-card__text"> 
+                            <p class = "h4 second-card__h4 ">Ангина. Лечим, не калечим</p>
+                            <a class = "brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="second-card__block second-card__block_active">
+                        <div class="second-card__img">
+                            <img src="images/zabota/Анимация стать мини2.png" alt="">
+                        </div>
+                        <div class="second-card__text"> 
+                            <p class = "h4 second-card__h4 ">В тренде! Отвечаем на главные вопросы о БАДах</p>
+                            <a class = "brends-a-text brends-a-text_green" href="#">Подробнее &nbsp;></a>
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+            <button onmouseover = "bluetext(this)" onmouseleave = "whitetext(this)" class = "universal-button stati__universal-button universal-button_blue"><span class = "button-text button-text_white-bolder">Перейти ко всем ссылкам</span></button>
+            
+        </div>
+        <div class="map-places">
+           <div class="map-places__zagolovok">
+            <p class = "podpis">Импловит в аптеках города</p>
+            <p class = "paragrapf">Где купить</p>
+           </div>
+           <div onclick = "tumblerRightLeft(this)" class="turn-left-right map-places__turn-left-right">
+                <p class = "Anim-Block-text Anim-Block-text_anactive">Списком</p>
+                <div class="turn-left-right__tumbler "></div>
+                <p class = "Anim-Block-text Anim-Block-text_gray_anactive">На карте</p>
+            </div>
+           <div class="city-choice">
+            <p class = "city-text">Город: </p>
+            <p class = "city-text city-text__bolder">Москва</p>
+           </div>
+           <div class="search-block">
+                <div class="search-block__searchLine search-block__searchLine_anactive">
+                    <input class = "search-block__input"type="text" placeholder="Введите адресс аптеки">
+                    <div class="Lupa search-block__Lupa  ">
+                        <img class = "Lupa__Img" src="SVG/search_types/Property 1=Default.svg" >
+                    </div>
+                </div>
+                <div class="citys-adress">
+                    <div class="search-block__searchLine">
+                        <input class = "search-block__input"type="text" placeholder="Введите адресс аптеки">
+                        <div class="Lupa search-block__Lupa  ">
+                            <img class = "Lupa__Img" src="SVG/search_types/Property 1=Default.svg" >
+                        </div>
+                    </div>
+                    <div class="cities ">
+                       <div class="citie citie_first">
+                            <p class = "button-text">г. Москва, Открытое ш., д. 2 к.12</p>
+                            <p class = "anons">м.Бульвар Рокоссовского</p>
+                            <p class = "anons">+7 (495) 215-52-15</p>
+                            <p class = "anons">Пн-Пт: 08:00-22:00;  Сб-Вс: 09:00-21:00</p>  
+                       </div> 
+                       <div class="citie citie_padding">
+                            <p class = "button-text">г. Москва, Открытое ш., д. 2 к.12</p>
+                            <p class = "anons">м.Бульвар Рокоссовского</p>
+                            <p class = "anons">+7 (495) 215-52-15</p>
+                            <p class = "anons">Пн-Пт: 08:00-22:00;  Сб-Вс: 09:00-21:00</p>  
+                       </div> 
+                       <div class="citie citie_padding">
+                            <p class = "button-text">г. Москва, Открытое ш., д. 2 к.12</p>
+                            <p class = "anons">м.Бульвар Рокоссовского</p>
+                            <p class = "anons">+7 (495) 215-52-15</p>
+                            <p class = "anons">Пн-Пт: 08:00-22:00;  Сб-Вс: 09:00-21:00</p>  
+                       </div>
+                       <div class="citie citie_padding">
+                        <p class = "button-text">г. Москва, Открытое ш., д. 2 к.12</p>
+                        <p class = "anons">м.Бульвар Рокоссовского</p>
+                        <p class = "anons">+7 (495) 215-52-15</p>
+                        <p class = "anons">Пн-Пт: 08:00-22:00;  Сб-Вс: 09:00-21:00</p>  
+                   </div>
+                                    
+                    </div>
+                </div>
+                <div class="yandex-map">
+                   <img src="images/zabota/image 51.png" alt="">
+                </div>
+           </div>
+           
+        </div>
+      
+    </div>
+      <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src = "slider.js"></script>
+<script src = "header.js" defer></script>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</body>
+</html>

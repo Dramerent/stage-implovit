@@ -1,0 +1,2471 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.city-text{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    line-height: 25.2px;
+}
+button{
+    background-color: white;
+    border-radius: 0;
+    border-color: white;
+    border-style: none;
+}
+.h4{
+    font-family: "montserrat";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 25.2px;
+}
+.paragrapf{
+    font-size: 36px;
+    font-weight: 800;
+    font-family: "Montserrat";
+    line-height: 50.4px;
+}
+.H3{
+    font-weight: 800;
+    line-height: 30.8px;
+    font-size: 22px;
+    font-family: "Montserrat";
+}
+.zagolovok{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+    font-family: "Montserrat";
+}
+.sales-text{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    line-height: 19.6px;
+}
+.Slider-text{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 25.2px;
+}
+.anons{
+    font-family:"Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.main-text{
+    font-size: 18px;
+    font-family: 400;
+    line-height: 26px;
+    font-family: "Roboto";
+}
+.menu-text{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    font-family: "Roboto";
+}
+.text_cards{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    font-family: "Roboto";
+}
+.Anim-Block-text{
+    font-size: 16px;
+    line-height: 19.5px;
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: 700;
+}
+.Anim-Block-text_white{
+    color:rgba(255, 255, 255, 1);
+}
+.brends-a-text{
+    font-size: 16px;
+    font-family: "Montserrat";
+    line-height: 22.4px;
+}
+.button-text{
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    line-height: 22.4px;
+
+}
+.main-text_white{
+    color:aliceblue
+}
+.slide-zagolovok{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 800;
+    font-family: "Montserrat";
+}
+.podpis{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color:rgba(130, 130, 130, 1);
+}
+::-webkit-input-placeholder{
+    border: none;
+    border-color: white;
+}
+.header{   
+    width: 100%;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.NameLogo{
+    min-height: 49px; 
+    margin-bottom: 10px;  
+}
+.Anactive-Lupa,
+.Anactive-close
+{
+    display: none;
+}
+.header__NameLogo-And-Search{
+    width: 1275px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.Search-Group{
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    
+}
+.SearchLine{
+    width: 377px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-color: #E0E0E0;
+    border-width: 1px;
+    border-radius: 50px;
+    border-style: solid;
+    
+    
+}
+.Search-Group__SearchLine{
+    padding: 0 15px 0 11px;
+    margin-right: 10px;
+}
+.Search-Group__Input{
+    border:0;
+    outline:0;
+    min-width: fit-content;
+    font-size: 15px;
+    line-height: 17.58px;
+    font-weight: 400;
+
+}
+.Lupa,
+.Like,
+.Anactive-close,
+.Anactive-Lupa{
+    width: auto;
+    height:auto;
+}
+.Search-Group__Lupa,
+.Search-Group__Anactive-close,
+.Search-Group__like,
+.Search-Group__Anactive-Lupa{
+    margin-top: 9px;
+}
+
+.Search-Group__Lupa,
+.Search-Group__Anactive-close
+{
+    margin-left: auto;
+}
+.Search-Group__Anactive-Lupa{
+    padding-right: 11px;
+}
+
+.close__image_anactive{
+    display: none;
+}
+.Lupa__Img:hover{
+    content: url("SVG/search_types/Property\ 1=Variant2.svg");
+}
+.close__Img:hover{
+    content: url("SVG/close_types/Property\ 1=Variant2\ \(1\).svg");
+}
+.Like__Img:hover{
+    content: url("SVG/like_types/Property\ 1=Variant2\ \(2\).svg");
+}
+.Line{
+    height: 1px;
+    display: flex;
+    width: 100%;
+    border-width: 1px 0 0 0;
+    border-color: rgba(206, 238, 242, 1);
+    border-style: solid;
+}
+.Header__Menu{
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    width: auto;
+    margin-left: 38px;
+}
+.Header-Menu__Products,
+.Header-Menu__Brends,
+.Header-Menu__Sales,
+.Header-Menu__ABC,
+.Header-Menu__News,
+.Header-Menu__Company,
+.Header-Menu__Buy,
+.Header-Menu__Contacts{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.Header-Menu__Products{
+    width: 240px;
+    margin: 0;
+    padding-left: 31px;
+}
+.Products__Group{
+    width: 157px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Header-Menu__Brends{
+    width: 183px;
+    justify-content: center;
+}
+.Header-Menu__Sales{
+    width:112px;
+    justify-content: center;
+}
+.Header-Menu__ABC{
+    width:198px;
+    justify-content: center;
+}
+.Header-Menu__News{
+    width:128px;
+    justify-content: center;
+}
+.Header-Menu__Company{
+    width: 151px;
+    justify-content: center;
+}
+.Header-Menu__Buy{
+    width: 158px;
+    padding-left: 21px;
+
+}
+.Buy__Group{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-between;
+
+}
+.Header-Menu__Contacts{
+    width: 147px;
+    justify-content: center;
+}
+.header-Group_active{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+}
+.header__Group
+{
+    width: auto;
+    margin: 0 auto;
+    height: 68px;
+    display: none;
+    align-items: center;
+
+}
+.header__Group a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header-Group__Products{
+    width:223px;
+    padding-left: 4px;
+    margin-left: 9px;
+    
+}
+.header-group__Brends{
+    width:154px; 
+    padding-left: 4px;
+}
+.header-group__Sales{
+    width: 75px;
+    padding-right: 3px;
+}
+.header-group__ABC{
+    width: 161px;
+    
+}
+.header-group__News{
+    width: 85px;
+}
+.header-group__Company{
+    width:116px;
+}
+.header-group__Buy{
+    width: 128px;
+    padding-top: 3px;
+    padding-left: 4px;
+}
+.header-group__contacts{
+    width: 106px;
+    padding-right: 8px;
+}
+.header-group__Lupa{
+    margin-left: 40px;
+}
+.header-group__like{
+    margin-left: 23px;
+}
+
+.Search-Group_anactive{
+    display: none;
+}
+.header__Group .SearchLine{
+    width:801px
+}
+.Main-block {
+    width: 100%;
+    
+    height: auto;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 246, 246, 1);
+
+}
+.text_cards_anactive{
+    display: "none";
+}
+.header__Name-Logo{
+    display: none;
+}
+/* ---------------------------------------- */
+
+.swiper {
+    max-width: 100%;
+    min-width: 100%;
+    height: 823px;
+    position: absolute;
+}
+.swiper-slide__background{
+    width: 1283;
+    height: 823px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+
+}
+.swiper-slide{
+    display: flex;
+    overflow: hidden;
+}
+.lekarstva,
+.backGround-Img{
+    position: absolute;
+    width: auto;
+    
+}
+.zagolovok_disabled{
+    display: none;
+}
+
+.swiper-slide__lekarstva{
+    right: 405px;
+    top:150px;
+    z-index: 1; 
+}
+.swiper-slide__backGround-Img{
+    right: 0;
+}
+.swiper-slide__info{
+    display: flex;
+    flex-direction: column;
+    width: 489px;
+    margin-left: 320px;
+    margin-top: 87px;
+    
+    
+}
+.swiper-slide__button{
+    width: 258px;
+    height: 46px;
+    background-color: rgba(70, 192, 193, 1);
+    border-radius: 50px;
+}
+.button-text_blue-bolder
+{
+    font-weight: 700;
+    color:rgba(70, 192, 193, 1)
+}
+.button-text_white-bolder{
+    font-weight: 700;
+    color:aliceblue
+}
+.info__Slider-text{
+    margin: 20px 0;
+}
+.swiper-slide__Group{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* ---------------------------------------- */
+
+.Anim-Blocks{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 720px;
+
+    z-index: 1;
+}
+.Anim-Block{
+    display: flex;
+    width: 270px;
+    height: 250px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.production__background,
+.production__anim-background,
+.production__ball1,
+.production__ball2,
+.production__ball3,
+.assort__background,
+.assort__Anim-Background,
+.assort__ball1,
+.assort__ball2,
+.import-basa__Background,
+.import-basa__Anim-Background,
+.import-basa__ball1,
+.import-basa__ball2,
+.import-basa__ball3,
+.quality__background,
+.quality__animbackground,
+.quality__ball1,
+.quality__ball2,
+.sales__background,
+.sales__animbackground,
+.sales__ball1,
+.sales__ball2
+{
+    
+    position: absolute;
+   
+}
+
+.production__image-group,
+.assort__image-group,
+.impost-basa__group,
+.quality__group,
+.sales__group{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    z-index: -1;
+}
+.production__ball1{
+   margin-bottom: 137px;
+   margin-left:215px;
+}
+.production__ball2{
+    margin-bottom: 255px;
+    margin-left: 90px;
+}
+.production__ball3{
+    margin-top: 190px;
+    margin-right: 215px;
+}
+.assort__ball1{
+    margin-bottom:180px;
+    margin-right: 90px;
+}
+.assort__ball2{
+    margin-bottom: 220px;
+    margin-left: 93px;
+}
+.import-basa__ball1{
+    margin-bottom: 216px;
+    margin-left: 76px;
+}
+.import-basa__ball2{
+    margin-top: 235px;
+    margin-left: 64px;
+}
+.import-basa__ball3{
+    margin-top: 127px;
+    margin-left: 179px;
+}
+.quality__ball1{
+    margin-bottom: 185px;
+    margin-right: 156px;
+}
+.quality__ball2{
+    margin-top: 124px;
+    margin-left: 175px;
+}
+.sales__ball1{
+    margin-bottom: 235px;
+    margin-left: 198px;
+}
+.sales__ball2{
+    margin-top: 100px;
+    margin-left: 190px;
+}
+
+/* ---------------------------------------- */
+
+
+
+
+.brends{
+    display: flex;
+    flex-direction: column;
+    width: 1282px;
+    height: 888px;
+    justify-content: space-between;
+    margin: 93px auto 0 auto;
+}
+.brends__zagolovok{
+    height: 72px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.brends__blocks{
+    display: grid;
+    height: 680px;
+    width: 100%;
+    margin-bottom: 10px;
+    grid-template-areas:
+    "a a b b c c"
+    "d d d e e e";
+    grid-template-rows: 1fr 1fr;
+}
+.brends__block{
+    background-color: white;
+    padding-left: 35px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.brends__block_grid1{
+    grid-area: a;
+    margin-right: 11px;
+    margin-bottom: 11px;  
+}
+.brends__block_grid2{
+    grid-area: b;
+    margin-right: 11px;
+    margin-left: 11px;
+    margin-bottom: 11px;
+}
+.brends__block_grid3{
+    grid-area: c;
+    margin-left: 11px;
+    margin-bottom: 11px;
+}
+.brends__block_grid4{
+    grid-area: d;
+    margin-right: 11px;
+    margin-top: 11px;
+}
+.brends__block_grid5{
+    grid-area: e;
+    margin-top: 11px;
+    margin-left: 11px;
+}
+.brends__button{
+    background-color: rgba(70, 192, 193, 1);
+    width: 335px;
+    height: 46px;
+    border-radius: 50px;
+    border-width: 1px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+.brends__text-implovit{
+    width:200px;
+    height: 173px;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+}
+.bredns__background{
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    right: 0;
+}
+.implovit1,
+.implovit2,
+.brends__background1,
+.brends__background2,
+.immonuceya1,
+.immonuceya2,
+.grovely1,
+.grovely2,
+.kardiolla1,
+.kardiolla2,
+.growvit1,
+.growvit2,
+.growvit3,
+.growvit4,
+.growvit5
+{
+    position: absolute; 
+}
+.brends__implovit1{
+    z-index: 10;
+    bottom: 20px;
+    right: 40px;
+}
+.brends__implovit2{
+    z-index: 9;
+    bottom: 60px;
+    right: 20px;
+}
+.brends__background1{
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+}
+.brends__background2{
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+}
+.brends-a-text_green{
+    color:rgba(70, 192, 193, 1);
+    font-weight: 700;
+}
+.brends-a-text_malina{
+    color:rgba(228, 0, 70, 1);
+    font-weight: 700;
+}
+.brends-a-text_sishki{
+    color:rgba(49, 141, 56, 1);
+    font-weight: 700;
+}
+
+
+.brends-text__immonaceya{
+    width: 201px;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 45px;
+    position: relative;
+    z-index: 20
+}
+.brends-text__immynicia-img{
+    width: 182.5px;
+    display: flex;
+    height: 26px;
+    margin-bottom: 15px;
+    
+}
+.brends__immonuceya1{
+    z-index:7;
+    bottom: 30px;
+    right:50px
+}
+.brends__immonuceya2{
+    z-index: 6;
+    right: 30px;
+    top:70px
+}
+.brends-text__grovely-botanic{
+    width: 193px;
+    height: 207px;
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20
+}
+
+.brends-text__botamic-img{
+    height: 46px;
+    margin-bottom: 12px;
+}
+.grovely1{
+    z-index:6;
+    right:73px;
+    bottom:15px
+}
+.text_cards_active{
+    display: block;
+}
+.grovely2{
+    right:24px;
+    top:70px;
+    z-index: 5;
+}
+.brends-text__kardiolla{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 322px;
+    height: 156px;
+    margin-top:50px;
+    position: relative;
+    z-index: 20
+}
+.brends-text__kardiola-img{
+    height: 27.2px;
+}
+.brends__lardiolla1{
+    z-index: 6;
+    right: 20px;
+    bottom: 0;
+}
+.brends__lardiolla2{
+    z-index: 5;
+    right:18px;
+    bottom: 50px;
+}
+.brends-text__growvit{
+    width: 354px;
+    margin-top: 28px;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20
+   
+}
+.brends__growvit1{
+    z-index:10;
+    right:0;
+    bottom:3px
+}
+.brends__growvit2{
+    z-index: 9;
+    right:50px;
+    bottom: 23px;
+}.brends__growvit3{
+    z-index: 8;
+    right: 0;
+    top:59px
+}
+.brends__growvit4{
+    z-index: 8;
+    right:245px;
+    top:90px
+}
+.brends__growvit5{
+    right:199px;
+    top:30px
+}
+.brends__button:hover{
+    background-color: rgba(246, 246, 246, 1);
+   
+    border-color: rgba(70, 192, 193, 1);
+    border-style: solid;
+
+}
+/* ---------------------------------------- */
+.about-Company{
+    max-width: 1920px;
+    min-width: auto;
+    height: 435px;
+    margin: 0;
+    margin-top:95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 355px 0 320px;
+    padding-top:100px;
+    
+}
+.about-Company_blue-background{
+    background-image: url("SVG/aboutCompany.svg");
+
+}
+.about-Company__button{
+    width: 273px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(160, 220, 228, 1);
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    transition: 0.5s;
+}
+.about-Company__opis{
+    width: 727px;
+    height: 185px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-Company__zagolovok{
+    width: 444px;
+    height: 127px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.about-Company__button:hover{
+    background-color: white;
+    border-color:rgba(160, 220, 228, 1);
+}
+.podpis_white{
+    color:rgba(255, 255, 255, 1)
+    
+}
+.paragrapf_white{
+    color:rgba(255, 255, 255, 1)
+}
+/* ----------------------------------------- */
+.paragrapf_no-choice{
+    color:rgba(189, 189, 189, 1)
+}
+.products{
+    width:1307px;
+    height: 608px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    margin-top: 87px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.turn-block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.turn-left-right{
+    width: 426px;
+    height: 34px;
+    border-radius: 50px;
+    border-color: rgba(160, 220, 228, 1);
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.products__turn-left-right{
+    margin: auto 0;
+    padding: 3px;
+}
+.absolute{
+    position: absolute;
+    z-index: 1;
+}
+.turn-left-right__tumbler{
+    height: 100%;
+    width: 50%;
+    background-color:  rgba(160, 220, 228, 1);
+    border-radius: inherit;
+    position: relative;
+}
+.products__swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .products__slider{
+    width: 100%;
+    height: 463px;
+    display: flex;
+    justify-content: space-between;
+    
+  
+    flex-direction: row;
+  }
+  .products-slide__img{
+    width: 266px;
+    height: 136px;
+    object-fit: cover;
+  }
+  .products-slider__slide{
+    width: 305px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:  25px 16px 20px 16px;
+    position: relative;
+  }
+  .products-slider__img{
+    width: 100%;
+    height: 163px;
+  }
+  .tochki{
+    text-align: center;
+
+  }
+  .popular-products{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .slide__tochki{
+    margin: 26px 0 10px 0;
+  }
+  .slide__slide-zagolovok{
+    margin-bottom: 5px;
+  }
+  .products-slider__button{
+    height: 50px;
+    width: 273px;
+    border-radius: 50px;
+    border-color: rgba(70, 192, 193, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: inherit;
+    transition: 0.3s;
+
+  }
+  .products-slider__button:hover{
+    background-color:rgba(70, 192, 193, 1);
+    
+  }
+  .sales{
+    width: auto;
+    height: 28px;
+    border-radius: 5px;
+    padding: 4px 15px;
+    position: absolute;
+    top: 11px;
+    left: 15px;
+  }
+  .sales-text__white{
+    color:white
+  }
+  .sales_pink{
+    background-color: rgba(222, 161, 210, 1);
+  }
+  .sales_green{
+    background-color:rgba(151, 224, 197, 1)
+  }
+  .Anim-Block-text_anactive,
+  .Anim-Block-text_gray_anactive{
+    position: absolute;
+    z-index: 1;
+    margin-top: 3px;
+    display: none;
+    
+  }
+  .Anim-Block-text_anactive{
+    margin-left: 14%;
+  
+  }
+  .Anim-Block-text_gray_anactive{
+    margin-left: 58%;
+    color: grey;
+  }
+  .arrow{
+    height: fit-content;
+    margin: auto 0;
+
+  }
+.pagination{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 58px;
+    display: none;
+   
+}
+/* ----------------------------------------- */
+.control{
+    width: 1305px;
+    height: 1207px;
+    
+    margin-top: 154px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kachestvo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start
+    
+}
+.kachectvo__opisanie{
+    height: 230px;
+    width:627px;
+    margin-right: 133px;
+    display: flex;
+    flex-direction: column;
+
+}
+.kachestva{
+    height: 1070px;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+.kachectvo-reverse__opisanie{
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 125px;
+    width: 520px;
+}
+.kachestvo-reverse{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.kachestvo__univesral-buttin{
+    margin-top: 20px;
+}
+.kachestvo__img{
+    left: -22px;
+    background-image: url("images/Пример\ анимации\ для\ блока\ производства\ 2\ \(1\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 510px;
+}
+.universal-button{
+    padding: 12px 87px;
+    border-radius: 50px;
+    width: fit-content;
+}
+.universal-button_blue{
+    background-color: rgba(70, 192, 193, 1);
+    border-color: white;
+}
+.universal-button_pink{
+    background-color:#F4ACBA;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+.universal-button_pink:hover{
+    background-color:white;
+    border-color: #F4ACBA;
+    border-width: 1px;
+    border-style: solid;
+}
+.universal-button_blue:hover{
+    background-color:rgba(246, 246, 246, 1);
+    border-color:rgba(70, 192, 193, 1);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.kachestvo-reverse__img{
+    right:-80px;
+    width: 820px;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("images/Пример\ анимации\ для\ блока\ производства\ 1.png");
+}
+
+/* ------------------------ */
+.about-Company_margin_pink-background{
+    background-image: url("SVG/pink-background.svg");
+    background-repeat: no-repeat; margin-top: 130px;
+}
+.about-Company__zagolovok_padding{
+    padding-bottom: 55px;
+}
+
+
+/* ---------------------------------------- */
+
+
+.stati{
+    width: 1330px;
+    height: 938px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 67px;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+.stati__zagolovok{
+    padding-left: 26px;
+}
+.stati__main-card{
+    height: 725px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.stati__cards{
+    
+    height: 760px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.stati__universal-button{
+    margin: 0 auto;
+}
+.main-card__text{
+    height: 204px;
+    width: 531px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.stati__second-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.second-card__block{
+    width: 370px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.second-card__h4{
+    margin-bottom: 14px;
+}
+.second-card__text{
+    width: 282px;
+    height: 87px;
+    display: flex;
+    flex-direction: column;
+}
+.slide-zagolovok_anactive{
+    display: none;
+}
+
+
+/* ------------------------ */
+.map-places{
+    width: 1289px;
+    height: 658px;
+    margin:66px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.city-text__bolder{
+    font-weight: 800;
+}
+.city-choice{
+    display: flex;
+}
+.search-block{
+    height: 494px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.citys-adress{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.search-block__searchLine{
+    width: 450px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 50px;
+    align-items: center;
+}
+.search-block__input{
+    margin-left: 20px;
+}
+.search-block__Lupa{
+    margin-right: 12px;
+}
+.search-block__input{
+    background-color: inherit;
+    border-width: 0;
+}
+.cities{
+    height: 410px;
+    width: 433px;
+    padding:0 6px;
+    overflow-y: scroll;
+    display: block;
+}
+.citie_first{
+    margin-top: 6px;
+    padding-bottom: 25px;
+}
+.citie{
+    border-style: solid;
+    border-color: grey;
+    border-width: 0 0 1px  0 ;
+}
+.citie_padding{
+    padding: 26px 0;
+}
+.search-block__searchLine_anactive{
+    display: none;
+}
+@media screen and (max-width: 1700px){
+    .header{
+        padding-right: 48px;
+        padding-top: 5px;
+    }
+    .swiper-slide__background{
+        right: -166px;
+    }
+    .swiper-slide__info{
+        margin-left: 135px;
+    }
+    .brends{
+       margin-right: 180px;
+    }
+    .about-Company{
+        padding: 0 215px 0 140px;
+        padding-top:100px;
+    }
+    .kachectvo__opisanie{
+        margin-right: 170px;
+    }
+    
+}
+@media screen and (max-width: 1500px){
+    .header{
+        padding-right: 47px;
+    }
+    .header__NameLogo-And-Search{
+        padding: 0 60px 0 80px;
+    }
+    .Header-Menu__News{
+        padding-left: 6px;
+    }
+    .Header-Menu__Brends{
+        width: 171px;
+        justify-content: center;
+        padding-left: 10px;
+    }
+    .Header-Menu__Sales{
+        padding-left: 5px;
+    }
+    .Header-Menu__ABC{
+        width:187px;
+        justify-content: center;
+        padding-left: 6px;
+    }
+    .Header-Menu__Buy{
+        width: 140px;
+        padding-left: 21px;
+    
+    }
+    .Header-Menu__Products{
+        padding-left: 34px;
+    }
+    /* -------------------------------------------------------- */
+    .zagolovok{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .swiper-slide__background{
+        right: -270px
+    }
+    .swiper-slide__info{
+        margin-left: 58px;
+        margin-top: 80px;
+        width: 370px;
+    }
+    .info__Slider-text{
+        margin-bottom: 40px;
+    }
+    .swiper-slide__button{
+        width: 196px;
+        height: 35px;
+    }
+    .swiper-slide__Group{
+        width: 388px;
+    }
+    .swiper{
+        height: 699px;
+    }
+        /* ------------------------------------- */
+
+    .Anim-Blocks{
+        margin-top: 625px;
+    }
+    .Anim-Block img{
+        width: 85%;
+        height: auto;
+    }
+    .Anim-Block{
+        width: 240px;
+        height: 220px;
+    }
+    .production__ball1{
+        margin-bottom: 130px;
+        margin-left:170px;
+     }
+     .production__ball2{
+         margin-bottom: 236px;
+         margin-left: 60px;
+     }
+     .production__ball3{
+         margin-top: 170px;
+         margin-right: 215px;
+     }
+     .assort__ball1{
+         margin-bottom:160px;
+         margin-right: 90px;
+     }
+     .assort__ball2{
+         margin-bottom: 200px;
+         margin-left: 65px;
+     }
+     .import-basa__ball1{
+         margin-bottom: 216px;
+         margin-left: 76px;
+     }
+     .import-basa__ball2{
+         margin-top: 190px;
+         margin-left: 64px;
+     }
+     .import-basa__ball3{
+         margin-top: 127px;
+         margin-left: 179px;
+     }
+     .quality__ball1{
+         margin-bottom: 170px;
+         margin-right: 100px;
+     }
+     .quality__ball2{
+         margin-top: 112px;
+         margin-left: 190px;
+     }
+     .sales__ball1{
+         margin-bottom: 215px;
+         margin-left: 220px;
+     }
+     .sales__ball2{
+         margin-top: 88px;
+         margin-left: 220px;
+     }
+     .Anim-Block p{
+        margin-right: 20px;
+     }
+     /* --------------------- */
+     .brends{
+        width: 1163px;
+        height: 840px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-between;
+     }
+     .brends__blocks{
+  
+        margin-top: 20px;
+        height: 630px;
+
+     }
+     .brends__block_grid1{
+        grid-area: a;
+        margin-right: 6px;
+        margin-bottom: 6px;  
+    }
+    .brends__block_grid2{
+        grid-area: b;
+        margin-right: 6px;
+        margin-left: 6px;
+        margin-bottom: 6px;
+    }
+    .brends__block_grid3{
+        grid-area: c;
+        margin-left: 6px;
+        margin-bottom: 6px;
+    }
+    .brends__block_grid4{
+        grid-area: d;
+        margin-right: 6px;
+        margin-top: 6px;
+    }
+    .brends__block_grid5{
+        grid-area: e;
+        margin-top: 6px;
+        margin-left: 6px
+    }
+    /* -------------------- */
+    .about-Company{
+        padding: 0 60px 0 57px;
+        padding-top:78px;
+        background-size:contain 100%;
+    }
+    .about-Company__opis{
+        width: 705px;
+        height: 200px;
+       
+    }
+    .products{
+        width: 1183px;
+        height: 608px;
+        margin-top: 58px;
+    }
+    .products-slider__slide{
+        width: 280px;
+        height: 463px;
+    }
+    .turn-left-right{
+        width: 345px;
+    }
+    /* ----------------------- */
+    .control{
+        width: 1205px;
+        margin-top: 57px;
+        overflow: hidden;
+        height: 1099px;
+    }
+    .kachestvo-reverse__img{
+        width: 700px;
+        
+    }
+    .kachestva{
+        height: 880px;
+    }
+    .universal-button{
+        width: fit-content;
+    }
+    .kachestvo__img{
+        width: 700px;
+    }
+    .kachectvo__opisanie{
+       margin-right: 0;
+        height: 400px;
+        margin-left: 0px;
+        
+        margin-top: 135px;
+        width: 510px;
+    }
+    .kachestvo-reverse{
+        height: 400px;
+    }
+    .kachectvo-reverse__opisanie{
+        margin-left: 20px;
+        margin-top: 110px;
+    }
+   /* ---------------- */
+   .about-Company_margin_pink-background{
+        background-image: url("SVG/pink-background.svg");
+        background-repeat: no-repeat; margin-top: 10px;
+    }
+    /* ------------------------- */
+    .stati img{
+        width: 100%;
+        height: 100%;
+    }
+    .stati{
+        width: 1194px;
+        height: 980px;
+        margin-top: 110px;
+    }
+    .main-card__img{
+        width: 487px;
+        height: 434px;
+    }
+    .stati__main-card{
+        height: 725px;
+    }
+    .main-card__text{
+        margin-left: 20px;
+        width: 440px;
+        height: 225px;
+        text-overflow: ellipsis;
+    }
+    .stati__second-card{
+        margin-left: 80px;
+        margin-top: 0;
+        align-items: start;
+        
+    }
+    .second-card__text{
+        height: 129px;
+        width: 277px;
+        padding-right: 70px;
+    }
+    .second-card__img{
+        width: 225px;
+    }
+    
+    .second-card__block{
+        width: 300px;
+        align-items: center;
+        height: 350px;
+    }
+    /* ------------------- */
+    .map-places{
+        width: 1170px;
+        height: 674px;
+
+    }
+    .yandex-map img{
+        width: 100%;
+        height: auto;
+    }
+    .yandex-map{
+        width: 671px;
+        height: 513px;
+    }
+    .search-block{
+        justify-content: space-between;
+        height: 513px;    
+    }
+    .cities{
+        width: 433px;
+        height: 410px;
+        margin-bottom: 18px;
+    }
+}
+@media screen and (max-width: 1279px){
+    .header__NameLogo-And-Search,
+    .Header__Menu,
+    .header__Group,
+    .Line{
+    
+        display: none;
+        
+    }
+    .header{
+        height: 64px;
+        padding: 0 0 0 0;
+        min-width: 100%;
+        justify-content: center;
+    }
+    .header__Name-Logo{
+        display: block;
+        margin: 0;
+        
+    }
+        /* ------------------------------------------ */
+
+    .swiper{
+        height: 794px;
+    }
+    .zagolovok br { 
+        display: inline;
+        content: ' ';
+        clear:none;
+    }
+    .Slider-text,
+    .swiper-slide__button{
+        display: none;
+    }
+    .backGround-Img{
+        height: 717px;
+        width: auto;
+    }
+    .swiper-slide__background{
+        right:-0px
+    }
+    .swiper-slide__Group{
+        width:fit-content;
+        margin-top: 20px;
+    }
+    .swiper-slide__info{
+        width: 700px;
+        align-items: center;
+        text-align: center;
+        margin-top: auto;
+        margin:auto auto 100px auto;
+    }
+   .lekarstva{
+    width:689px;
+    height: 451.9;
+   }
+    /* ------------------------------------------ */
+
+   .Anim-Blocks{
+    flex-wrap: wrap;
+    margin-top: 850px;
+    margin-left: 40px;
+    width: 849px;
+   margin-right: auto;
+   margin-left: auto;
+   }
+   .Anim-Block{
+    width:283px;
+   }
+   /* -------------------------------------------- */
+   .brends{
+    width: 964px;
+    height: 1222px;
+    align-items: center;
+    overflow: hidden;
+
+   }
+   .brends__blocks{
+    overflow: hidden;
+
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e e";
+ 
+    height: 1050px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    
+
+}
+.brends__block_grid1{
+    grid-area: a;
+    margin-right: 11px;
+    margin-bottom: 11px;  
+}
+.brends__block_grid2{
+    grid-area: b;
+    margin-left: 11px;
+    margin-bottom: 11px;
+}
+.brends__block_grid3{
+    grid-area: c;
+    margin-top: 11px ;
+    margin-right: 11px;
+    margin-bottom: 11px;
+}
+.brends__block_grid4{
+    margin-top: 11px ;
+    margin-left: 11px;
+    margin-bottom: 11px;
+
+}
+.brends__block_grid5{
+    grid-area: e;
+    margin-top: 11px;
+}
+   /* --------------- */
+   .about-Company{
+    padding: 0 30px 0 30px;
+    padding-top:78px;
+    background-size:contain 100%;
+    margin-top:120px;
+    position: relative;
+}
+.about-Company__opis{
+    width: 481px;
+    height: 200px;
+   
+}
+.about-Company__button{
+    position: absolute;
+    bottom: 83px;
+    right:410px
+}
+/* ---------------------- */
+.products{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    margin-top: 100px;
+    height: 695px;
+}
+.popular-products{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 170px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    
+}
+.products__slider{
+    width: 1270px;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 30px;
+}
+.products-slider__slide{
+    height: 464px;
+    width: 310px;
+    text-align: center;
+    padding:  25px 18px 20px 18px;
+    background-color: white;
+
+}
+.turn-block{
+    flex-direction: column;
+    align-items: center;
+}
+.paragrapf_no-choice{
+    display: none;
+}
+
+.turn-left-right{
+    width: 580px;
+    
+}
+.turn-block{
+    height: 150px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.products-slide__img{
+    height: 155px;
+    width: 304px;
+    object-fit: cover;
+}
+.slide__tochki{
+    margin-top: 16px;
+}
+.Anim-Block-text_anactive,
+.Anim-Block-text_gray_anactive{
+
+    display: block;
+    
+}
+.arrow{
+    display: none;
+}
+/* --------------- */
+.control__zagolovok{
+    text-align: center;
+}
+.control{
+    width: auto;
+    margin-top: 120px;
+    overflow: hidden;
+
+}
+.kachestvo__img{
+    width: 500px;
+}
+.kachestva{
+    width: 1000px;
+    margin-top: 100px;
+}
+.kachectvo__opisanie{
+    width: 470px;
+    margin-left: 50px;
+    margin-top: 120px;
+}
+.kachestvo-reverse{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+}
+.kachectvo-reverse__opisanie{
+    margin-top: 60px;
+    width: 600px;
+    min-height: 300px;
+}
+.kachestvo-reverse__img{
+    width: 600px;
+    overflow: hidden;
+    display: flex;
+    left: 0;
+    object-fit: cover;
+    margin-left: 0px;
+    
+}
+/* -------------------------------- */
+.stati__second-card{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.stati__cards{
+    justify-content: space-between;
+    width: 100%;
+    height: 770px;
+    
+}
+.stati__main-card{
+    height: 755px;
+}
+.main-card__text{
+    height: 230px;
+}
+.stati{
+    width: 900px;
+
+    margin: 0;
+    margin-left: 10px;
+    height: 956px;
+    margin-top: 65px;
+    align-items: center;
+    
+}
+.second-card__text{
+    padding-right: 0;
+}
+.second-card__img{
+    width: 270px;
+}
+.second-card__block_active{
+    display: none;
+}
+/* --------------------------------------- */
+.map-places__zagolovok{
+    text-align: center;
+}
+.city-choice{
+    justify-content: center;
+}
+.map-places{
+    max-width: 973px;
+    height: 688px;
+    margin-top: 130px;
+    
+}
+.search-block__searchLine{
+    width: 459px;
+}
+.yandex-map{
+    width: 483px;
+    height: 523px;
+    overflow: hidden;
+}
+.yandex-map img{
+    height: 100%;
+    width: auto;
+}
+.search-block{
+    height: 523px;
+    overflow: hidden;
+}
+.citie_first{
+    margin-top: 0;
+}
+}
+@media screen and (max-width: 960px) {
+    .swiper{
+        height: 714px;
+    }
+    .backGround-Img{
+        height: 649px;
+    }
+    .lekarstva{
+        right:100px
+    }
+    .swiper-slide__Group{
+ 
+        margin-top: 20px;
+    }
+    .swiper-slide__info{
+        width: 700px;
+      
+        margin-bottom: 20px ;
+
+    }
+    .Anim-Blocks{
+        display: none;
+    }
+    .brends{
+        width:720px;
+        height: 1231px;
+        margin: 810px auto 0 auto;
+    }
+    .brends__blocks{
+        height: 1000px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+   
+    .brends__text-implovit,
+    .brends-text__immonaceya,
+    .brends-text__grovely-botanic,
+    .brends-text__kardiolla,
+    .brends-text__growvit{
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+        transform: scale(0.8);
+
+    }
+    .brends__block{
+        padding: 0;
+    }
+    .brends__text-implovit{
+        margin-top: 10px;
+        height: 120px;
+    }
+    .text_cards{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.2px;
+        text-overflow: ellipsis;
+
+
+    }
+    .brends-text__immonaceya{
+        height: 100px;
+        margin-top: 30px;
+    }
+    .brends-text__grovely-botanic{
+        margin-top: 15px;
+        height: 110px;
+    }
+    .brends-text__botamic-img{
+        margin: 0;
+        padding: 0;
+    }
+   .brends-text__kardiolla{
+        margin-top: 20px;
+        height: 100px;
+    }
+    .brends-text__implovit-img{
+        height: 40px;
+    }
+    .brends-text__growvit{
+        width: fit-content;
+        margin-left: 50px;
+        margin-top: 80px;
+        height: 115px;
+    }
+   
+    
+    .brends__block_grid1 .brends-background1__img{
+        content: url("SVG/brends/brends__img/implovit-940/Vector\ 31\ \(2\).svg");
+       left: 0;
+    }
+    .brends__block_grid1 .brends-background2__img{
+        content: url("SVG/brends/brends__img/implovit-940/Vector\ 30\ \(2\).svg");
+    }
+    .immonuceya1,
+    .immonuceya2,
+    .brends__block_grid2 .brends__background1{
+        display: none;
+    }
+    .brends__block_grid2 .brends__background2{
+        content: url("SVG/brends/brends__img/immonuceya-940/Group\ 8908.svg");
+    }
+    .grovely1,
+    .grovely2,
+    .brends__block_grid3 .brends__background1{
+        display: none;
+    }
+    .brends__block_grid3 .brends__background2{
+        content: url("SVG/brends/brends__img/growely-940/Group\ 8914.svg");
+    }
+    .kardiolla1,
+    .kardiolla2,
+    .brends__block_grid4 .brends__background1{
+        display: none;
+    }
+    .brends__block_grid4 .brends__background2{
+        content: url("SVG/brends/brends__img/kardiolla-940/Group\ 8915.svg");
+    }
+    .about-Company__opis .main-text{
+        display: none;
+    }
+    .about-Company__zagolovok{
+        width: 444px;
+        height: 127px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        position:unset;
+        margin-bottom:40px;
+    }
+    .about-Company__opis{
+        width: fit-content;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        height: min-content;
+        position:unset;
+    }
+    .about-Company{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: 403px;
+        padding: auto 0;
+        padding-bottom: 40px;
+    }
+    .about-Company__button{
+        position:unset;
+    }
+    /* ----------------- */
+    .products{
+        margin-top: 68px;
+        height: 665px;
+    }
+    .turn-block{
+        height: 170px;
+    }
+    .popular-products{
+        height: 190px;
+    }
+    .Anim-Block-text_anactive{
+        margin-left: 17%;
+      
+    }
+    .Anim-Block-text_gray_anactive{
+        margin-left: 61%;
+    }
+    /* ---------------------------- */
+    .kachestvo-reverse{
+        display: none;
+    }
+    .kachestvo{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: unset;
+        left: 0;
+        right: 0;
+        
+
+       
+    }
+    .kachestva{
+        margin-left: 50px;
+        width: 600px;
+        height: 700px;
+
+    }
+    .control{
+        height: 883px;
+        width: auto;
+        margin-top: 170px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        display: flex;
+        padding: 0;
+        padding-bottom: 13px;
+
+    }
+    .kachestvo__img{
+        width: 100%;
+        height: 700px;
+        background-size: contain;
+        display: flex;
+    }
+    .kachectvo__opisanie{
+        margin: 0;
+        width: 600px;
+        justify-content: space-between;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+
+        
+        /* --------- */
+
+    }
+    .control__zagolovok{
+        width: auto;
+    }
+    /* ------------ */
+    .about-Company_margin_pink-background{
+        margin-top: 87px;
+    }
+    .about-Company__zagolovok_padding{
+        padding-top: 40px;
+    }
+    /* ----------------------------- */
+   .slide-zagolovok_anactive{
+    display: block;
+   }
+   .stati__second-card{
+    display: none;
+   }
+   .stati__zagolovok{
+    text-align: center;
+   }
+   .stati__cards{
+    width: fit-content;
+    height: 600px;
+   }
+   .stati{
+    width: fit-content;
+    margin: 0 auto;
+   }
+   .stati{
+    margin-top: 49px;
+    height: 783px;
+   }
+   .main-card__img{
+    width: 400px;
+    height: auto;
+   }
+   .stati__main-card{
+    height: 600px;
+   }
+   .main-card__text .text_cards{
+    height: 90px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space-collapse:wrap;
+   }
+   .H3{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+   }
+   /* ---------------------------- */
+   .map-places{
+    width: 726px;
+    height: 896px;
+    overflow:visible;
+    justify-content: space-between;
+    display: flex;
+   }
+   .yandex-map{
+    display: none;
+   }
+.map-places__turn-left-right{
+    margin: 0 auto;
+}
+   .search-block__searchLine{
+    width: 718px;
+   }
+   .cities{
+    width: 710px;
+    height: 605px;
+    margin-bottom: 0;
+   }
+   .search-block{
+    height: 680px;
+   }
+  
+}
+@media screen and (max-width: 720px){
+    .zagolovok{
+        font-size: 26px;
+        line-height: 31.2px;
+    }
+    .swiper{
+        height: 500px;
+    }
+    
+    .swiper-slide__Group{
+ 
+        margin-top: 30px;
+    }
+    .swiper-slide__info{
+        width: 700px;
+        align-items: center;
+        text-align: center;
+        margin-top: auto;
+        margin:auto auto 40px auto;
+    }
+    .backGround-Img{
+        width: 538px;
+        height: 426px;
+    }
+    .lekarstva{
+        width: 425px;
+        height: 278px;
+        right:20px;
+        top:100px
+    }
+    .brends{
+        width: 320px;
+        height: 1843px;
+        margin-top: 580px;
+        text-align: center;
+    }
+    .brends__blocks{
+        grid-template-areas: 
+            "a a a a"
+            "b b b b"
+            "c c c c"
+            "d d d d"
+            "e e e e";
+        ;
+        height:1670px ;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 6fr;
+    }
+    .brends__block_grid1{
+        grid-area: a;
+        margin-right: 0;
+        margin-bottom: 11px;  
+    }
+    .brends__block_grid2{
+        grid-area: b;
+        margin-left: 0;
+        margin-top:11px;margin-right: 0;
+        margin-bottom: 11px;
+    }
+    .brends__block_grid3{
+        grid-area: c;
+        margin-top: 11px ;
+        margin-right: 0;
+        margin-bottom: 11px;
+        margin-left: 0;
+    }
+    .brends__block_grid4{
+        margin-top: 11px ;
+        margin-left: 0;
+        margin-bottom: 11px;
+        margin-right: 0;
+    
+    }
+    .brends__block_grid5{
+        grid-area: e;
+        margin-top: 11px;
+        margin-left: 0;
+    }
+    .brends__growvit1,
+    .brends__growvit2,
+    .brends__growvit3,
+    .brends__growvit4,
+    .brends__growvit5{
+        display: none;
+    }
+    .brends__block_grid5 .brends__background1{
+        content: url("SVG/brends/brends__img/growit-720/Group\ 8978.svg");
+    }
+    .brends-text__growvit{
+        margin: 20px auto 0 auto;
+        height:130px
+    }
+    .brends__implovit1{
+        bottom: -10px;
+        right:90px;
+        transform: scale(0.83);
+    }
+    .brends__implovit2{
+        bottom: 10px;
+        right:80px;
+        transform: scale(0.83);
+    }
+    .paragrapf{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+    .about-Company{
+        height: 308px;
+        margin-top: 80px;
+        padding-bottom: 0;
+    }
+    .about-Company__zagolovok{
+        height: 90px;
+        max-width: 310px;
+        margin-top: 20px;
+    }
+    .brends__text-implovit{
+        margin-top: 0px;
+        justify-content: space-between;
+        height: 130px;
+    }
+    .brends-text__immonaceya{
+        margin-top: 10px;
+        height: 110px;
+    }
+    .turn-left-right{
+        width: 322px;
+    }
+    .popular-products{
+        height: 135px;
+        
+    }
+    .turn-block{
+        height: 110px;
+    }
+    .turn-left-right__tumbler{
+        width: 45%;
+    }
+    .products{
+        height: 619px;
+    }
+    .products-slider__slide{
+        height: 430px;
+        width: 290px;
+        padding-bottom: 25px;
+    }
+    .products__slider{
+        margin-left: 20px;
+        width: 1200px;
+        
+    }
+    .products-slide__img{
+        width: 284px;
+        height: 163px;
+        object-fit: contain;
+    }
+    .slide__tochki{
+        margin-top: 2px;
+        margin-bottom: 9px;
+    }
+    .Anim-Block-text_anactive{
+        margin-left: 6%;
+      
+    }
+    .Anim-Block-text_gray_anactive{
+        margin-left: 46%;
+    }
+    .brends__button{
+        width: 320px;
+    }
+    .products__pagination{
+        padding: 0 20px;
+    }
+ /* ----------------------------- */
+ .kachectvo__opisanie p{
+    display: none;
+    }
+    .control{
+        height: 507px;
+        width: 100vw;
+        margin-top: 80px;
+    }
+    .kachestvo__img{
+        width: 300px;
+        height: 400px;
+    }
+    .kachectvo__opisanie{
+        width: 360px;
+    }
+    .kachestvo__univesral-buttin{
+        padding: 12px 20px;
+    }
+    .kachestvo{
+        width: 320px;
+        height: 400px;
+    }
+    /* ------------------------ */
+    .text_cards_active{
+        display: none;
+    }
+    .main-card__img{
+        width: 326px;
+    }
+    .about-Company_margin_pink-background{
+        margin-top: 0px;
+    }
+    .stati{
+        width: 360px;
+        height: 665px;
+    }
+    .stati__zagolovok{
+        width: 250px;
+    }
+    .stati__main-card{
+        width: 360px;
+        height: 460px;
+        align-items: center;
+    }
+    .main-card__text{
+        width:320px;
+        margin-left: 0;
+        height: 150px;
+    }
+    .H3 br{
+        display: none;
+    }
+    .stati__universal-button{
+        padding: 12px 40px;
+    }
+    /* ------------------------- */
+    .map-places{
+        width: 321px;
+        height: 784px;
+        margin-top: 80px;
+    }
+    .yandex-map{
+        width: 320px;
+        justify-items: 495px;
+        display: block;
+    }
+    .citys-adress{
+        display: none;
+    }
+    .search-block{
+        width: 320px;
+        height: 585px;
+        flex-direction: column;
+    }
+    .search-block__searchLine{
+        width: 320px;
+        height: 50px;
+    }
+    .search-block__searchLine_anactive{
+        display: flex;
+    }
+    
+    
+      
+}

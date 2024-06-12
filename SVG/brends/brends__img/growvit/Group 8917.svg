@@ -1,0 +1,30 @@
+<svg width="298" height="266" viewBox="0 0 298 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3" filter="url(#filter0_i_5030_10671)">
+<path d="M18.0938 100.622C-24.575 158.907 18.0938 238.84 44.7619 271.521C228.361 458.61 428.833 185.183 343.626 78.4384C224.268 -71.089 71.4299 27.765 18.0938 100.622Z" fill="#DEA1D2"/>
+</g>
+<g filter="url(#filter1_i_5030_10671)">
+<path d="M37.4081 105.939C-0.608082 165.067 37.4081 246.155 61.1682 279.308C224.747 469.101 403.359 191.722 327.443 83.4355C221.1 -68.2527 84.9283 32.0298 37.4081 105.939Z" fill="#DEA1D2"/>
+</g>
+<defs>
+<filter id="filter0_i_5030_10671" x="-0.0078125" y="0.519531" width="365.84" height="338.809" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2" dy="8"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.631373 0 0 0 0 0.752941 0 0 0 0.8 0"/>
+<feBlend mode="multiply" in2="shape" result="effect1_innerShadow_5030_10671"/>
+</filter>
+<filter id="filter1_i_5030_10671" x="21.2803" y="4.39062" width="328.166" height="343.648" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.631373 0 0 0 0 0.752941 0 0 0 0.6 0"/>
+<feBlend mode="multiply" in2="shape" result="effect1_innerShadow_5030_10671"/>
+</filter>
+</defs>
+</svg>
