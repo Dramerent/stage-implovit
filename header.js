@@ -13,7 +13,9 @@ function whitetext(el){
  el.children[0].style.color = "white"
 }
 tumbler = 0
-
+window.addEventListener('resize', () => {
+    console.log(`Новые размеры: ${window.innerWidth}x${window.innerHeight}`);
+  });
 function tumblerRightLeft(){
     if(tumbler == 0){
         document.getElementsByClassName("turn-left-right__tumbler")[0].style.marginLeft = "auto"
